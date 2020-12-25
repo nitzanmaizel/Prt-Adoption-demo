@@ -1,3 +1,4 @@
 {
-	"mongoURI": "mongodb+srv://nitzan1993:tbhnvnbdv1993@pet-adoption-app.vp9a1.mongodb.net/Pet-adoption?retryWrites=true&w=majority"
+	"mongoURI": "mongodb+srv://nitzan1993:tbhnvnbdv1993@pet-adoption-app.vp9a1.mongodb.net/Pet-adoption?retryWrites=true&w=majority",
+	"jwtSecret": "mySecretToken"
 }
