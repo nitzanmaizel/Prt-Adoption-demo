@@ -25,6 +25,11 @@ router.post(
 		const { firstName, lastName, email, password, phoneNumber } = req.body;
 		try {
 			// See if the User exists ==>
+			let user = await User.findOne({ email });
+			if (user) {
+				res.status(400).json({ errors: [{ msg: 'User already exists' }] });
+			}
+
 			// Encrypt password ==>
 			// Get users gravatar ==>
 			// Save the User ==>
