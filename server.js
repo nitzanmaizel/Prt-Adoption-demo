@@ -15,6 +15,7 @@ app.use(cors());
 app.use('/signup', require('./routes/api/signup'));
 app.use('/login', require('./routes/api/login'));
 app.use('/pets', require('./routes/api/pets'));
+app.use('/users', require('./routes/api/users'));
 
 app.listen(PORT, () => {
 	console.log(`Server on http://localhost:${PORT}`);

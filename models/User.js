@@ -25,6 +25,11 @@ const UserScheme = new mongoose.Schema({
 	avatar: {
 		type: String,
 	},
+	savedPets: [],
+	admin: {
+		type: Boolean,
+		default: false,
+	},
 	date: {
 		type: Date,
 		default: Date.now(),
