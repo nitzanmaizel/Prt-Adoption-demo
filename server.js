@@ -12,8 +12,8 @@ app.use(express.json({ extended: false }));
 app.use(cors());
 
 // Define Routers ==>
-app.use('/users', require('./routes/api/users'));
-app.use('/auth', require('./routes/api/auth'));
+app.use('/signup', require('./routes/api/signup'));
+app.use('/login', require('./routes/api/login'));
 app.use('/pets', require('./routes/api/pets'));
 
 app.listen(PORT, () => {
