@@ -85,6 +85,9 @@ router.get('/:id', auth, async (req, res) => {
 		res.json(pet);
 	} catch (err) {
 		console.error(err.message);
+		if (err.kind == 'ObjectId') {
+			return res.status(400).json({ msg: 'Pet not found ' });
+		}
 		res.status(500).send('Server Error');
 	}
 });
