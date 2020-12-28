@@ -28,8 +28,17 @@ const UserScheme = new mongoose.Schema({
 	avatar: {
 		type: String,
 	},
-	savedPets: [],
-	admin: {
+	savedPets: [
+		{
+			type: Object,
+		},
+	],
+	userPets: [
+		{
+			type: Object,
+		},
+	],
+	isAdmin: {
 		type: Boolean,
 		default: false,
 	},
